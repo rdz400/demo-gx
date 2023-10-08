@@ -1,0 +1,25 @@
+{
+    "name": "test-great-expectations",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mads-hartmann.bash-ide-vscode",
+                "tamasfe.even-better-toml",
+                "ms-python.vscode-pylance",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "ms-python.python"
+            ]
+        }
+    },
+    "dockerComposeFile": "compose.yaml",
+    "service": "devcontainer",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "mounts": [
+        {
+            "source": "./",
+            "target": "/workspaces/${localWorkspaceFolderBasename}",
+            "type": "bind"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demo-gx"
+version = "1.0.0"
+description = "Demo of library great expectations"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
